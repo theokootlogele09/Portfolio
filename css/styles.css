@@ -1,0 +1,239 @@
+:root {
+  --primary: #0A3D62;
+  --accent: #1B98E0;
+  --bg: #F5F7FA;
+  --card: #FFFFFF;
+  --text: #1B1F23;
+  --sub: #4A4F55;
+  --border: #E1E4E8;
+  --radius: 12px;
+}
+
+*{box-sizing:border-box}
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+}
+h1, h2, h3 {
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+p {
+  color: var(--sub);
+  font-size: 1rem;
+}
+
+.container{max-width:1000px;margin:0 auto;padding:2rem}
+.hero {
+  background: var(--card);
+  text-align: center;
+  padding: 5rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero h1 {
+  font-size: 2.75rem;
+  color: var(--primary);
+}
+
+.role {
+  font-size: 1.25rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.bio {
+  max-width: 700px;
+  margin: 1rem auto;
+  font-size: 1.05rem;
+  color: var(--sub);
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: var(--radius);
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.cta:hover {
+  background: #062c47;
+}
+
+.hero h1{margin:0;font-size:2.25rem}
+.role{color:var(--accent);font-weight:600}
+.bio{max-width:700px;margin:1rem auto;color:#334}
+.cta{display:inline-block;margin-top:1rem;padding:.6rem 1rem;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none}
+section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  margin: 2.5rem 0;
+  padding: 2rem;
+  border-radius: var(--radius);
+}
+
+h2{margin-top:0}
+.skills-list{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0}
+.skills-list li{background:#eef5ff;padding:.5rem .75rem;border-radius:6px}
+.project-grid img {
+  width: auto;
+  height: auto;
+}
+
+.project-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  transition: 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+.project-card img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.project-card h3 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.project-card a:hover {
+  background: #157bb8;
+}
+
+.site-footer{text-align:center;padding:1rem;color:#666}
+@media (max-width:600px){.hero h1{font-size:1.5rem}}
+
+
+.skill_set {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+#skill_box {
+  inline-size: 200px;
+  block-size: 200px;
+  padding: 20px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+#skill_box h5 {
+  margin-top: 1rem;
+  color: var(--primary);
+}
+
+
+
+
+
+.gradient{
+    background: linear-gradient(to right, cyan, purple);
+   border-radius: 10px;
+   padding: 0.7px;
+
+
+
+
+
+
+}
+
+
+.skill_set{
+
+    display: flex;
+        justify-content: space-between;
+       
+        padding: 127px 10%;
+       
+       
+        overflow: hidden;
+
+
+}
+.gradient{
+    background: linear-gradient(to right, cyan, purple);
+   border-radius: 10px;
+   padding: 0.7px;}
+   Primary: #0A3D62 (navy blue)
+Accent: #1B98E0 (corporate blue)
+Background: #F5F7FA (off-white)
+Card: #FFFFFF
+Text: #1B1F23
+Subtext: #4A4F55
+Border: #E1E4E8
+.footer {
+  background: var(--primary);
+  color: white;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.footer a {
+  color: #9CCBFF;
+}
+
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* Project grid + tags */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.project-card .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  margin: 0 0 .75rem;
+}
+
+.project-card .tags span {
+  background: #eef5ff;
+  color: var(--primary);
+  font-size: .8rem;
+  font-weight: 600;
+  padding: .2rem .6rem;
+  border-radius: 999px;
+}
